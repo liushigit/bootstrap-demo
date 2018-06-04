@@ -55,3 +55,10 @@ button:focus, input:active:focus, label.active.focus  {
   outline:0;
   box-shadow: none;
 }
+
+.nav a.active {
+  font-weight: 300;
+  &.active{
+    font-weight: 700;
+  }
+}
