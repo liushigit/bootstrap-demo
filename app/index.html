@@ -29,64 +29,86 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <div class="container">
-    <div class="header">
-      <h3 class="text-muted">待办事项</h3>
-      <!-- ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul-->
+  <div class="container-fluid">
+    <div class="">
+      <div class="header">
+        <h3 class="text-muted">待办事项</h3>
+        <!-- ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul-->
+      </div>
     </div>
-    <div style="margin-bottom: 16px" class="clearfix">
-      <a role="button" href="#" class="btn btn-primary far fa-plus float-right"> 添加</a>
 
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-sm btn-outline-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> 未完成
-        </label>
-        <label class="btn btn-sm btn-outline-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> 超期
-        </label>
-        <label class="btn btn-sm btn-outline-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> 完成
-        </label>
-      </div> &nbsp;
-      
+    <div style="margin-bottom: 16px; margin-top: 16px;" class="row">
+
     </div>
-    <ul class="list-group">
-      <li class="list-group-item">
-
-        <span class="align-middle">取款</span>
-        <span class="text-muted font-weight-light align-middle">上午10:00</span>
-        <span class="badge badge-warning align-middle fas fa-clock"> 即将到期</span>
-
-        <div class="float-right">
-          <button type="button" class="btn btn-sm btn-outline-dark">标记为完成</button>
-          <a href="#" class="btn btn-danger far fa-trash-alt"></a>
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+            aria-selected="true">家庭</a>
+          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">工作</a>
+          <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+            aria-selected="false">休闲</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+            aria-selected="false">学习</a>
         </div>
+      </div>
+      <div class="col-md-9">
+        <div class="row" style="margin-bottom: 16px;">
+          <div class="col">
+            <a role="button" href="#" class="btn btn-primary far fa-plus float-right"> 添加</a>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-sm btn-outline-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> 未完成
+              </label>
+              <label class="btn btn-sm btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 超期
+              </label>
+              <label class="btn btn-sm btn-outline-secondary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> 完成
+              </label>
+            </div>
+          </div>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="align-middle">取款</span>
+            <span class="text-muted font-weight-light align-middle">上午10:00</span>
+            <span class="badge badge-warning align-middle fas fa-clock"> 即将到期</span>
 
-      </li>
-      <li class="list-group-item">
-        <span class="fas fa-shopping-bag "></span>
-        买水果
-        <span class="text-muted font-weight-light">下午16:00</span>
-      </li>
-      <li class="list-group-item">修自行车
-        <span class="text-muted font-weight-light">明天上午10:00</span>
-      </li>
-      <li class="list-group-item">
-        <span class="fas fa-envelope "></span>
-        发Email给张三
-        <span class="text-muted font-weight-light">明天晚上19:00</span>
-      </li>
-    </ul>
+            <div class="float-right">
+              <button type="button" class="btn btn-sm btn-outline-dark">标记为完成</button>
+              <a href="#" class="btn btn-danger far fa-trash-alt"></a>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <span class="fas fa-shopping-bag "></span>
+            买水果
+            <span class="text-muted font-weight-light">下午16:00</span>
+          </li>
+          <li class="list-group-item">修自行车
+            <span class="text-muted font-weight-light">明天上午10:00</span>
+          </li>
+          <li class="list-group-item">
+            <span class="fas fa-envelope "></span>
+            发Email给张三
+            <span class="text-muted font-weight-light">明天晚上19:00</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
   </div>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
