@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>webapp2</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="styles/tmp.css" />
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="container-fluid">
+    <div class="">
+      <div class="header">
+        <h3 class="text-muted">待办事项</h3>
+        <!-- ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul-->
+      </div>
+    </div>
+
+    <div style="margin-bottom: 16px; margin-top: 16px;" class="row">
+
+    </div>
+    <div class="row">
+      <div class="col-md-2 d-none d-md-block">
+
+      </div>
+      <div class="col-md-3">
+        <form>
+          <div>
+
+          </div>
+          <legend class="text-muted" style="margin-bottom: 1em">新建事件</legend>
+          <div class="form-group">
+            <label for="">事件*</label>
+            <input type="text" class="form-control" id="event" aria-describedby="eventHelp" placeholder="例：去理发">
+            <small id="eventHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="">时间*</label>
+            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+              <input type="text" class="form-control datetimepicker-input" id="datetimepicker5" data-toggle="datetimepicker" data-target="#datetimepicker5"
+              />
+              <div class="input-group-append" data-target="#datetimepicker1">
+                <div class="input-group-text">
+                  <i class="fa fa-calendar"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">地点</label>
+            <input type="text" class="form-control" id="event" aria-describedby="placeHelp">
+            <small id="placeHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="text-right">
+              <a href="/" class="btn btn-outline-secondary">取消</a>
+              <button type="submit" class="btn btn-primary">保存</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script>
+    $(function () {
+      $('#datetimepicker5').datetimepicker({
+        locale: 'zh-cn'
+      });
+    });
+  </script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
